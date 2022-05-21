@@ -8,7 +8,7 @@ import {
   filterNewProduct,
 } from "../redux/actions/productsAction";
 import { Link } from "react-router-dom";
-import { addToCart, getCartItems } from "../redux/actions/cartActions";
+import { addToCart } from "../redux/actions/cartActions";
 
 const Products = () => {
   const dispatch = useDispatch();
