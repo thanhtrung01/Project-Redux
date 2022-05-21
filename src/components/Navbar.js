@@ -4,7 +4,7 @@ import logo from "../image/logo.webp";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { statusCart } from "../redux/actions/cartActions";
-import Cart from "../Pages/Cart";
+import Cart from "./Cart";
 
 const Navbar = () => {
 
@@ -51,13 +51,13 @@ const Navbar = () => {
           </div>
           <div className="header-info flex justify-center md:justify-end items-center font-medium">
             <div>
-              <Link to={'/login'} className="login hover:text-yellow-500">
+              <a href="#" className="login hover:text-yellow-500">
                 Login
-              </Link>
+              </a>
               <span> / </span>
-              <Link to={'/register'} className="Register hover:text-yellow-500">
+              <a href="#" className="Register hover:text-yellow-500">
                 Register
-              </Link>
+              </a>
             </div>
             <div className="cart ml-5" onClick={() => dispatch(statusCart(true))}>
               <button>

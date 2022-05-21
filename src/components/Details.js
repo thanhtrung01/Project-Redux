@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Slider from "react-slick";
-import Products from "../components/Products";
+import Products from "./Products";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";

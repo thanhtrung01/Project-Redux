@@ -6,6 +6,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
 }
+
 .font-text {
   font-family: 'Kaushan Script', cursive;
 }
@@ -119,9 +120,7 @@ body {
 .contact-google-map {
   height: 90%;
 }
-.login-page {
-  height: auto;
-}
+
 
 
 
@@ -148,9 +147,6 @@ body {
   .details-slider-wrap .slick-next {
     margin: 0 15px;
   }
-  .footer-info {
-    height: 480px;
-  }
 }
 @media screen and (max-width: 600px) { 
   .header-menu {
@@ -175,9 +171,6 @@ body {
     margin-top: 60px;
     height: 500px;
   }
-  .footer-info {
-    height: 260px;
-  }
 }
 @media screen and (max-width: 420px) {
   .header-menu {
@@ -190,8 +183,5 @@ body {
   .details-slider-wrap .slick-prev, 
   .details-slider-wrap .slick-next {
     margin: 0 30px;
-  }
-  .footer-info {
-    height: 250px;
   }
 }
