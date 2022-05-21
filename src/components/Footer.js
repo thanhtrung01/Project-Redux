@@ -5,12 +5,12 @@ import instaImg3 from "../image/insta-3.jpg.webp";
 import instaImg4 from "../image/insta-4.jpg.webp";
 import instaImg5 from "../image/insta-5.jpg.webp";
 import instaImg6 from "../image/insta-6.jpg.webp";
-import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineInstagram, AiFillHeart } from "react-icons/ai";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="banner-footer h-auto gap-px grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 w-full">
+      <div className="banner-footer gap-px grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 w-full">
         <div className="relative">
           <img className="w-full" src={instaImg1}></img>
           <div className="opacity-0 banner-footer-item absolute items-center inset-0 hover:bg-white hover:opacity-80">
@@ -103,7 +103,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center footer-info bg-gray-900 text-white">
+      <div className="text-center bg-gray-900 text-white">
         <div className="container mx-auto px-6 pt-6">
           <div className="flex justify-center mb-6">
             <a
