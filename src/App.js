@@ -8,8 +8,10 @@ import { Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Shop from "./Pages/Shop";
 import Blog from "./Pages/Blog";
-import Details from "./components/Details";
+import Details from "./Pages/Details";
 import Contact from "./Pages/Contact";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/details/:id" element={<Details />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/register" element={<Register />}></Route>
       </Routes>
       <Footer />
     </div>
