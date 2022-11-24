@@ -1,6 +1,6 @@
 import React from "react";
 import { BsFillCartPlusFill } from "react-icons/bs";
-import logo from "../image/logo.webp";
+import logo from "../image/logo_ft.jpg";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { statusCart } from "../redux/actions/cartActions";
@@ -9,6 +9,7 @@ import Cart from "../Pages/Cart";
 const Navbar = () => {
   const dispatch = useDispatch();
   const status = useSelector((state) => state.cartReducer.status);
+  const cart = useSelector((state) => state.cartReducer.cart);
 
   return (
     <div>
@@ -16,7 +17,7 @@ const Navbar = () => {
         <nav className="w-full smallTablet:w-full smallTablet:ml-3 md:w-4/5 mx-auto h-36 lg:h-20 flex justify-center md:justify-between flex-wrap items-center">
           <div className="logo">
             <Link to="/">
-              <img src={logo}></img>
+              <img src={logo} className="logo"></img>
             </Link>
           </div>
           <div>
@@ -62,7 +63,10 @@ const Navbar = () => {
               className="cart ml-5"
               onClick={() => dispatch(statusCart(true))}
             >
-              <button>
+              <button className="cart">
+                <span className="cart-quality text-sm text-blue-700">
+                  {cart.length}
+                </span>
                 <BsFillCartPlusFill className="text-2xl hover:text-yellow-500" />
               </button>
             </div>
