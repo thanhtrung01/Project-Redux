@@ -7,9 +7,8 @@ import { statusCart } from "../redux/actions/cartActions";
 import Cart from "../Pages/Cart";
 
 const Navbar = () => {
-
-  const dispatch = useDispatch()
-  const status = useSelector(((state) => state.cartReducer.status))
+  const dispatch = useDispatch();
+  const status = useSelector((state) => state.cartReducer.status);
 
   return (
     <div>
@@ -42,7 +41,7 @@ const Navbar = () => {
                   BLOG
                 </li>
               </Link>
-              <Link to={'/contact'}>
+              <Link to={"/contact"}>
                 <li className="text-sm iphone5:text-xs md:text-base header-menu-item font-medium hover:text-yellow-500">
                   CONTACT
                 </li>
@@ -51,15 +50,18 @@ const Navbar = () => {
           </div>
           <div className="header-info flex justify-center md:justify-end items-center font-medium">
             <div>
-              <Link to={'/login'} className="login hover:text-yellow-500">
+              <Link to={"/login"} className="login hover:text-yellow-500">
                 Login
               </Link>
               <span> / </span>
-              <Link to={'/register'} className="Register hover:text-yellow-500">
+              <Link to={"/register"} className="Register hover:text-yellow-500">
                 Register
               </Link>
             </div>
-            <div className="cart ml-5" onClick={() => dispatch(statusCart(true))}>
+            <div
+              className="cart ml-5"
+              onClick={() => dispatch(statusCart(true))}
+            >
               <button>
                 <BsFillCartPlusFill className="text-2xl hover:text-yellow-500" />
               </button>
@@ -68,7 +70,7 @@ const Navbar = () => {
         </nav>
       </header>
 
-      {status ? <Cart /> : ''}
+      {status ? <Cart /> : ""}
     </div>
   );
 };

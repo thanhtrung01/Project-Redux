@@ -4,6 +4,7 @@ import {
   FILTER_NEW_PRODUCT,
   FILTER_PRODUCTS,
   SEARCH_PRODUCT,
+  SET_STATUS_PRODUCT,
 } from "../constants";
 import { datProduct } from "../../data";
 
@@ -11,6 +12,7 @@ const initState = {
   products: [...datProduct],
   detailProducts: [],
   newProducts: [],
+  statusShop: true,
 };
 
 const productsReducer = (state = initState, action) => {
@@ -81,6 +83,12 @@ const productsReducer = (state = initState, action) => {
           products: [...datProduct],
         };
       }
+
+    case SET_STATUS_PRODUCT:
+      return {
+        ...state,
+        products: [...datProduct],
+      };
 
     default:
       return state;
