@@ -64,7 +64,7 @@ const Navbar = () => {
               onClick={() => dispatch(statusCart(true))}
             >
               <button className="cart">
-                <span className="cart-quality text-sm text-blue-700">
+                <span className="cart-quality text-sm text-black">
                   {cart.length}
                 </span>
                 <BsFillCartPlusFill className="text-2xl hover:text-yellow-500" />
