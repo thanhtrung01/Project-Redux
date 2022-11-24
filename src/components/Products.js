@@ -10,7 +10,6 @@ import {
 } from "../redux/actions/productsAction";
 import { Link, useLocation } from "react-router-dom";
 import { addToCart } from "../redux/actions/cartActions";
-import { datProduct } from "../data";
 
 const Products = ({}) => {
   const dispatch = useDispatch();
@@ -18,8 +17,9 @@ const Products = ({}) => {
   const products = useSelector((state) => state.productsReducer.products);
 
   let location = useLocation();
+
   useEffect(() => {
-    if (location.pathname === "/") {
+    if (location.pathname === "/" || location.pathname.includes("/details/")) {
       dispatch(statusProduct());
     }
   }, [location]);
