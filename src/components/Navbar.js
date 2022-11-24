@@ -4,7 +4,7 @@ import logo from "../image/logo_ft.jpg";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { statusCart } from "../redux/actions/cartActions";
-import Cart from "../Pages/Cart";
+import Cart from "../pages/Cart";
 
 const Navbar = () => {
   const dispatch = useDispatch();
