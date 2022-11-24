@@ -17,8 +17,6 @@ const Products = ({}) => {
   const newProducts = useSelector((state) => state.productsReducer.newProducts);
   const products = useSelector((state) => state.productsReducer.products);
 
-  console.log(datProduct);
-
   let location = useLocation();
   useEffect(() => {
     if (location.pathname === "/") {
