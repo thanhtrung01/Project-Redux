@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -6,14 +6,26 @@ import {
   detailProducts,
   filterCategories,
   filterNewProduct,
+  statusProduct,
 } from "../redux/actions/productsAction";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { addToCart } from "../redux/actions/cartActions";
+import { datProduct } from "../data";
 
-const Products = () => {
+const Products = ({}) => {
   const dispatch = useDispatch();
   const newProducts = useSelector((state) => state.productsReducer.newProducts);
   const products = useSelector((state) => state.productsReducer.products);
+
+  console.log(datProduct);
+
+  let location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/") {
+      dispatch(statusProduct());
+    }
+  }, [location]);
+
   const allCategories = [
     "All",
     ...new Set(products.map((item) => item.category)),

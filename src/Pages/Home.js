@@ -12,6 +12,7 @@ import { AiFillCar } from "react-icons/ai";
 import { FaMoneyBillAlt } from "react-icons/fa";
 import { CgSupport } from "react-icons/cg";
 import { BsHeadset } from "react-icons/bs";
+console.log(window.location.pathname);
 
 const Home = () => {
   return (

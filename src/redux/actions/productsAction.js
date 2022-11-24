@@ -4,6 +4,7 @@ import {
   FILTER_NEW_PRODUCT,
   FILTER_PRODUCTS,
   SEARCH_PRODUCT,
+  SET_STATUS_PRODUCT,
 } from "../constants";
 
 export const filterNewProduct = (payload) => {
@@ -38,5 +39,11 @@ export const searchProduct = (payload) => {
   return {
     type: SEARCH_PRODUCT,
     payload,
+  };
+};
+
+export const statusProduct = () => {
+  return {
+    type: SET_STATUS_PRODUCT,
   };
 };
