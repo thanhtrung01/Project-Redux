@@ -5,6 +5,14 @@ import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import Shop from "./pages/Shop";
+import Blog from "./pages/Blog";
+import Details from "./pages/Details";
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Admin from "./auth/Admin";
 import About from "./Pages/About";
 import Shop from "./Pages/Shop";
 import Blog from "./Pages/Blog";
@@ -12,6 +20,7 @@ import Details from "./Pages/Details";
 import Contact from "./Pages/Contact";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+
 
 function App() {
   return (
@@ -26,6 +35,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
+        <Route path="/admin" element={<Admin />}></Route>
       </Routes>
       <Footer />
     </div>

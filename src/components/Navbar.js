@@ -42,9 +42,14 @@ const Navbar = () => {
                   BLOG
                 </li>
               </Link>
-              <Link to={"/contact"}>
+              <Link to={"/contact"} className="pr-7">
                 <li className="text-sm iphone5:text-xs md:text-base header-menu-item font-medium hover:text-yellow-500">
                   CONTACT
+                </li>
+              </Link>
+              <Link to={"/admin"}>
+                <li className="text-sm iphone5:text-xs md:text-base header-menu-item font-medium hover:text-yellow-500">
+                  ADMIN
                 </li>
               </Link>
             </ul>
