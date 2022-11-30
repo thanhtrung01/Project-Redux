@@ -2,7 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./Pages/Home";
+import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
@@ -13,14 +13,6 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Admin from "./auth/Admin";
-import About from "./Pages/About";
-import Shop from "./Pages/Shop";
-import Blog from "./Pages/Blog";
-import Details from "./Pages/Details";
-import Contact from "./Pages/Contact";
-import Login from "./Pages/Login";
-import Register from "./Pages/Register";
-
 
 function App() {
   return (
